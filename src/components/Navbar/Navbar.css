@@ -4,9 +4,20 @@
     justify-content: space-between;
     align-items: center;
     background: var(--color-black);
-
+    position: relative;
     padding: 1rem 2rem;
+    transition: 0.5s ease;
 }
+
+.app__navbar.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    transition: 0.5s ease;
+    background: var(--color-gray);
+  }
 
 .app__navbar-logo {
     display: flex;
@@ -26,6 +37,7 @@
 
     list-style: none;
 }
+
 
 .app__navbar-links li {
     margin: 0 1rem;
